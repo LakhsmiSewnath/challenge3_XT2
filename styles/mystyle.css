@@ -174,8 +174,8 @@ body{
   }
 
   article p {
-    padding-top: 5%;
-    padding-bottom: 5%;
+    padding-top: 7%;
+    padding-bottom: 7%;
   }
 
   .lijn {
@@ -236,9 +236,9 @@ body{
 
   div.achtergrond-name {
     width: 45%;
-    margin-top: -116px;
-    padding-top: 10px;
-    padding-bottom: 10px;
+    margin-top: -114px;
+    padding-top: 5px;
+    padding-bottom: 5px;
     position: absolute;
     z-index: 2;
   }
@@ -246,6 +246,7 @@ body{
 
   .articleskarakters {
     width: 90%;
+    padding: 
   }
 
   .articleKarakter1,.articleKarakter3,.articleKarakter5,.articleKarakter7 {
@@ -275,8 +276,20 @@ body{
         "bekende-toeristen bekende-toeristen bekende-toeristen bekende-toeristen"
         "sectiekarakter1 sectiekarakter2 sectiekarakter3 sectiekarakter4"
         "sectiekarakter5 sectiekarakter6 sectiekarakter7 sectiekarakter8";
-    }
+  }
 
+  h1 {
+    font-size: 2.6em;
+  }
+
+  h2 {
+    font-size: 2.2em;
+    font-family: 'Montserrat', sans-serif;
+  }
+
+  p {
+    font-size: 1.4em;
+  }
   /*De code voor de antwoord bij de vraag "IS HET VEILIG HIER OM TE LANDEN?"*/
   .achtergrond-tekst {
     padding-left: 2%;
@@ -301,7 +314,7 @@ body{
 
   /*Tekstbox met tekst "Bekende toeristen die hier ook zijn geweest"*/
   .bekende-toeristen {
-    padding-top: 1.6%;
+    padding-top: 1.3%;
     padding-left: 2%;
     padding-right: 2%;
     padding-bottom: 0%;
@@ -309,11 +322,11 @@ body{
   }
 
   div.achtergrond-name {
-    padding-top: 5px;
+    padding-top: 0px;
     padding-left: 0px;
-    padding-bottom: 5px;
+    padding-bottom: 0px;
     width: 22.5%;
-    margin-top: -106px;
+    margin-top: -124px;
   }
 
   article p {
@@ -356,6 +369,19 @@ body{
 }
 
 @media only screen and (min-width: 1926px) {
+
+  h1 {
+    font-size: 3em;
+  }
+
+  h2 {
+    font-size: 2.4em;
+    font-family: 'Montserrat', sans-serif;
+  }
+
+  p {
+    font-size: 1.6em;
+  }
 
   /*Yes/No foto*/
   picture #yesno-image {
