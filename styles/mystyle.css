@@ -5,19 +5,6 @@ body{
 	margin: 0px;
 }
 
-h1 {
-    font-size: 2em;
-  }
-
-  h2 {
-    font-size: 1.6em;
-    font-family: 'Montserrat', sans-serif;
-
-  }
-
-  p {
-    font-size: 1em;
-  }
 
 /*De volgende code geld voor deviceschermen met een minimale breedte van 360px*/
 @media only screen and (min-width: 360px){
@@ -41,6 +28,21 @@ h1 {
       "sectiekarakter7"
       "sectiekarakter8";
   }
+
+  h1 {
+    font-size: 2em;
+  }
+
+  h2 {
+    font-size: 1.6em;
+    font-family: 'Montserrat', sans-serif;
+
+  }
+
+  p {
+    font-size: 1em;
+  }
+
 
   header {
     grid-area: header;
@@ -206,6 +208,19 @@ h1 {
       "sectiekarakter3 sectiekarakter4"
       "sectiekarakter5 sectiekarakter6"
       "sectiekarakter7 sectiekarakter8";
+  }
+
+  h1 {
+    font-size: 2.4em;
+  }
+
+  h2 {
+    font-size: 1.8em;
+    font-family: 'Montserrat', sans-serif;
+  }
+
+  p {
+    font-size: 1.2em;
   }
 
   #yesno-image {
