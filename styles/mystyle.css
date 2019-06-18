@@ -1,0 +1,356 @@
+body{
+	font-family: 'Lato', sans-serif;
+	background-color: #484848;
+  color: black;
+	margin: 0px;
+}
+
+h1 {
+    font-size: 2em;
+  }
+
+  h2 {
+    font-size: 1.6em;
+    font-family: 'Montserrat', sans-serif;
+
+  }
+
+  p {
+    font-size: 1em;
+  }
+
+/*De volgende code geld voor deviceschermen met een minimale breedte van 360px*/
+@media only screen and (min-width: 360px){
+  /*Dit geld voor alle secties  van de pagina */
+  #grid-container {
+    width: 100%;
+    background-color: #484848;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.1fr 0.8fr 0.075fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-areas: 
+      "header"
+      "yesno-sectie"
+      "bekende-toeristen"
+      "sectiekarakter1"
+      "sectiekarakter2"
+      "sectiekarakter3"
+      "sectiekarakter4"
+      "sectiekarakter5"
+      "sectiekarakter6"
+      "sectiekarakter7"
+      "sectiekarakter8";
+  }
+
+  header {
+    grid-area: header;
+    display: flex;
+    width: 100%;
+    background-color: #333333;
+    box-shadow: 10px 10px 15px black;
+  }
+
+  .logo {
+    width: 300px;
+    margin: auto;
+    padding-left: 40px;
+  }
+
+  .yesno-sectie {
+    grid-area: yesno-sectie;
+    background: #222222;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    color: #F2F2F2;
+  }
+
+  .achtergrond-tekst {
+    background-color: #e95065;
+    padding-left: 7%;
+    padding-right: 7%;
+    color: black;
+  }
+
+  .achtergrond-vraag {
+    background-color: #1B1B1B;
+    padding-left: 7%;
+    padding-right: 7%;
+  }
+
+  picture {
+    margin: auto;
+    align-self: center;
+  }
+
+  #yesno-image {
+    width: 300px;
+    box-shadow: 10px 10px 15px #181818;
+    border-radius: 20px;
+  }
+  
+  /*Tekstbox met tekst "Bekende toeristen die hier ook zijn geweest"*/
+  .bekende-toeristen {
+    grid-area: bekende-toeristen;
+    padding-left: 7%;
+    padding-right: 7%;
+    margin-top: 6%;
+    background-color: rgb(174,1,255);
+  }
+
+  /*Articles van de Rick and Morty karakters*/
+  .articleskarakters {
+    display: flex | column;
+    justify-content: center;
+    background-color: #333333;
+    width: 86%;
+    border-radius: 30px;
+    color: #AE01FF;
+    margin-left: 7%;
+    margin-top: 6.5%;
+    box-shadow: 10px 10px 20px #222222;
+  }
+
+  /*De article van de karakter Rick Sanchez*/
+  .articleKarakter1 {
+    grid-area: sectiekarakter1;
+  }
+
+  /*De article van de karakter Morty Smith*/
+  .articleKarakter2 {
+    grid-area: sectiekarakter2; 
+  }
+
+  /*De article van de karakter Pizza-person*/
+  .articleKarakter3 {
+    grid-area: sectiekarakter3; 
+  }
+
+  /*De article van de karakter Mr. Meeseeks*/
+  .articleKarakter4 {
+    grid-area: sectiekarakter4; 
+  }
+
+  /*De article van de karakter Zeep Xanflorp*/
+  .articleKarakter5 {
+    grid-area: sectiekarakter5;
+  }
+
+  /*De article van de karakter Calypso*/
+  .articleKarakter6 {
+  }
+
+  /*De article van de karakter Armagheadon*/
+  .articleKarakter7 {
+    grid-area: sectiekarakter7;
+  }
+  /*De article van de karakter Tuberculosis*/
+  .articleKarakter8 {
+    grid-area: sectiekarakter8;
+    margin-bottom: 6.5%;
+  }
+
+  .imagekarakter {
+    width: 100%;
+    border-radius: 30px 30px 0px 0px;
+  }
+
+  div.achtergrond-name {
+    width: 86%;
+    background: rgb(174,1,255,0.7);
+    position: absolute;;
+    margin-top: -95px;
+  }
+
+  div.achtergrond-name h2 {
+    color: white;
+    padding-top: 10px;
+    padding-left: 30px;
+    padding-bottom: 10px;
+
+  }
+
+  article p {
+    padding-top: 5%;
+    padding-bottom: 5%;
+  }
+
+  .lijn {
+    margin: auto;
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+    border-bottom-color: #4F4F4F;
+    width: 90%;
+  }
+
+  .location {
+    padding-left: 5%;
+    padding-top: 2%; 
+    padding-bottom: 0%;
+  }
+}
+
+
+/*De volgende code geld voor deviceschermen met een minimale breedte van 768px*/
+@media only screen and (min-width: 768px) {
+/*Dit geld voor alle secties  van de pagina */
+ #grid-container {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 0.1fr 1fr 0.1fr 1fr 1fr 1fr 1fr; 
+    grid-template-areas: 
+      "header header"
+      "yesno-sectie  yesno-sectie"
+      "bekende-toeristen bekende-toeristen"
+      "sectiekarakter1 sectiekarakter2"
+      "sectiekarakter3 sectiekarakter4"
+      "sectiekarakter5 sectiekarakter6"
+      "sectiekarakter7 sectiekarakter8";
+  }
+
+  #yesno-image {
+    width: 450px;
+  }
+
+  /*Tekstbox met tekst "Bekende toeristen die hier ook zijn geweest"*/
+  .bekende-toeristen {
+    padding-left: 3.5%;
+    padding-right: 3.5%;
+    margin-top: 3.5%;
+  }
+
+  div.achtergrond-name {
+    width: 45%;
+    margin-top: -116px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    position: absolute;
+    z-index: 2;
+  }
+
+
+  .articleskarakters {
+    width: 90%;
+  }
+
+  .articleKarakter1,.articleKarakter3,.articleKarakter5,.articleKarakter7 {
+    margin-left: 6.5%;
+  } 
+
+  .articleKarakter2,.articleKarakter4,.articleKarakter6,.articleKarakter8 {
+    margin-left: 3.5%;
+  } 
+
+  .articleKarakter7{
+    margin-bottom: 6.5%;
+    padding-bottom: 12%;
+  }
+}
+
+
+@media only screen and (min-width: 1366px) {
+/*Dit geld voor alle secties  van de pagina */
+  #grid-container {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+      grid-template-rows: 0.15fr 1.2fr 0.2fr 0.8fr 0.8fr; 
+      grid-template-areas: 
+        "header header header header"
+        "yesno-sectie yesno-sectie yesno-sectie yesno-sectie"
+        "bekende-toeristen bekende-toeristen bekende-toeristen bekende-toeristen"
+        "sectiekarakter1 sectiekarakter2 sectiekarakter3 sectiekarakter4"
+        "sectiekarakter5 sectiekarakter6 sectiekarakter7 sectiekarakter8";
+    }
+
+  /*De code voor de antwoord bij de vraag "IS HET VEILIG HIER OM TE LANDEN?"*/
+  .achtergrond-tekst {
+    padding-left: 2%;
+    padding-right: 2%;
+    padding-top: 1.5%;
+    padding-bottom: 1.5%;
+  }
+
+  /*Code bij vraag "IS HET VEILIG HIER OM TE LANDEN?"*/
+  .achtergrond-vraag {
+    padding-left: 2%;
+    padding-right: 2%;
+    padding-top: 1.5%;
+    padding-bottom: 1.5%;
+  }
+
+  /*Yes/No foto*/
+  picture #yesno-image {
+    width: 700px;
+  }
+
+
+  /*Tekstbox met tekst "Bekende toeristen die hier ook zijn geweest"*/
+  .bekende-toeristen {
+    padding-top: 1.6%;
+    padding-left: 2%;
+    padding-right: 2%;
+    padding-bottom: 0%;
+    margin-top: 2%;
+  }
+
+  div.achtergrond-name {
+    padding-top: 5px;
+    padding-left: 0px;
+    padding-bottom: 5px;
+    width: 22.5%;
+    margin-top: -106px;
+  }
+
+  article p {
+    padding-top: 8%;
+    padding-bottom: 8%;
+    padding-left: 8%;
+  }
+
+  .location {
+    padding-bottom: 5%;
+    padding-left: 8%;
+  }
+
+  .articleskarakters {
+    margin-top: 8%;
+  }
+
+  .articleKarakter1,.articleKarakter5 {
+    margin-left: 8%;
+  } 
+
+  .articleKarakter2,.articleKarakter6 {
+    margin-left: 6%;
+  } 
+
+  .articleKarakter3,.articleKarakter7  {
+    margin-left: 4%;
+  } 
+  
+  .articleKarakter4,.articleKarakter8 {
+    margin-right: 8%;
+    margin-left: 2%;
+  } 
+
+
+  .articleKarakter5,.articleKarakter6,.articleKarakter7,.articleKarakter8 {
+    margin-bottom: 8%;
+  } 
+
+}
+
+@media only screen and (min-width: 1926px) {
+
+  /*Yes/No foto*/
+  picture #yesno-image {
+    width: 900px;
+  }
+
+   /*Tekstbox met tekst "Bekende toeristen die hier ook zijn geweest"*/
+  .bekende-toeristen {
+    padding-top: 2%;
+  }
+
+}
+
